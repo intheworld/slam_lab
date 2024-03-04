@@ -1,0 +1,3 @@
+[submodule "slambook2/3rdparty/g2o"]
+	path = slambook2/3rdparty/g2o
+	url = git@github.com:RainerKuemmerle/g2o.git
