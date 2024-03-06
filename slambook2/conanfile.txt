@@ -1,0 +1,9 @@
+[requires]
+sophus/1.22.10
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout

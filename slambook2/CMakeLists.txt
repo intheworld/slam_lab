@@ -37,6 +37,16 @@ set(G2O_LIBRARIES
 
 message(VERBOSE "G2O_LIBRARIES: " ${G2O_LIBRARIES})
 
+# ###############
+# Pangolin #
+# ###############
+
+find_package(Sophus REQUIRED)
+include_directories(${Sophus_INCLUDE_DIR})
+
+message(VERBOSE "Sophus_INCLUDE_DIR: " ${Sophus_INCLUDE_DIR})
+
+
 add_subdirectory(useEigen)
 add_subdirectory(useGeometry)
 add_subdirectory(nonLinearOpt)
