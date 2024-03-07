@@ -1,5 +1,6 @@
 [requires]
 sophus/1.22.10
+opencv/4.8.1
 
 [generators]
 CMakeDeps

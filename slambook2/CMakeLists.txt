@@ -46,7 +46,12 @@ include_directories(${Sophus_INCLUDE_DIR})
 
 message(VERBOSE "Sophus_INCLUDE_DIR: " ${Sophus_INCLUDE_DIR})
 
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+message(WARN "OpenCV_INCLUDE_DIR: " ${OpenCV_INCLUDE_DIRS})
 
 add_subdirectory(useEigen)
 add_subdirectory(useGeometry)
 add_subdirectory(nonLinearOpt)
+add_subdirectory(images)
